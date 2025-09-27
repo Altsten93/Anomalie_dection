@@ -15,7 +15,7 @@ try:
         'price_spiky': 'Rural Market'
     }, inplace=True)
     # Create a time index for the line chart
-    df['Date'] = pd.to_datetime(pd.date_range(start='2023-01-03', periods=len(df), freq='D'))
+    df['Date'] = pd.to_datetime(pd.date_range(start='2023-01-01', periods=len(df), freq='D'))
 except FileNotFoundError:
     # Create a dummy dataframe if the file is not found
     df = pd.DataFrame({

@@ -13,7 +13,7 @@ num_points = 1000
 price_1 = np.random.lognormal(mean=0, sigma=1, size=num_points)
 
 # Column 2: Simulating a more stable price with a higher base
-price_2 = np.random.lognormal(mean=3, sigma=0.335, size=num_points)
+price_2 = np.random.lognormal(mean=3, sigma=0.5, size=num_points)
 
 # Column 3: Simulating a price with occasional small spikes
 price_3 = np.random.lognormal(mean=2, sigma=0.2, size=num_points)
